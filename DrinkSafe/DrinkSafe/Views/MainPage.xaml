@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DrinkSafe"
+             xmlns:gmaps = "clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             x:Class="DrinkSafe.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="StartAndExpand" />
+        <Grid>
+            <gmaps:Map x:Name="MyMap" MapType="Street" HasZoomEnabled="True" MyLocationEnabled="True" >
+                <gmaps:Map.ItemTemplate>
+                    <DataTemplate>
+                        <gmaps:Pin Icon="{Binding PinIcon}" Position="{Binding Position}"
+                                   Label="{Binding PinLabel}" />
+                    </DataTemplate>
+                </gmaps:Map.ItemTemplate>
+            </gmaps:Map>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
