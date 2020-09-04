@@ -9,7 +9,7 @@
         <!-- Place new controls here -->
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
-           VerticalOptions="StartAndExpand" />
+           VerticalOptions="Start" />
         <Grid>
             <gmaps:Map x:Name="MyMap" MapType="Street" HasZoomEnabled="True" MyLocationEnabled="True" >
                 <gmaps:Map.ItemTemplate>

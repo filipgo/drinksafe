@@ -53,6 +53,7 @@
         <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="4.0.0-BETA1" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="BaseActivity.cs" />
         <Compile Include="MainActivity.cs" />
         <Compile Include="Resources\Resource.Designer.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
